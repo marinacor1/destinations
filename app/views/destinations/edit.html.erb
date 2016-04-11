@@ -1,0 +1,8 @@
+<h1>Edit Your Destination</h1>
+<%= form_for(@destination) do |f| %>
+<%= f.label "name" %>
+<%= f.text_area "name" %>
+<%= f.label "url_path" %>
+<%= f.text_area "url_path" %>
+<%= f.submit %>
+<%end %>

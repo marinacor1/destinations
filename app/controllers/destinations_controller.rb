@@ -15,6 +15,13 @@ class DestinationsController < ApplicationController
     @destination = Destination.find(params[:id])
   end
 
+  def update
+  end
+
+  def edit
+    @destination = Destination.find(params[:id])
+  end
+
   private
 
   def param_filter
