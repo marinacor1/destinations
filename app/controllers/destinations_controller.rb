@@ -16,6 +16,11 @@ class DestinationsController < ApplicationController
   end
 
   def update
+    if @destination.update(param_filter)
+      redirect_to @destination
+    else
+      render :edit 
+    end
   end
 
   def edit
