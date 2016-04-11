@@ -16,10 +16,11 @@ class DestinationsController < ApplicationController
   end
 
   def update
+    @destination = Destination.find(params[:id])
     if @destination.update(param_filter)
       redirect_to @destination
     else
-      render :edit 
+      render :edit
     end
   end
 
