@@ -1,3 +1,4 @@
 <h1>Welcome to <%= @destination.name %></h1>
  <%= image_tag @destination.url_path %>
 <p><%= link_to "Edit Destination", edit_destination_path(@destination) %></p>
+<p><%= link_to "Delete", destination_path(@destination), method: :delete, data: {confirm: "Really delete destination?"} %> </p>
