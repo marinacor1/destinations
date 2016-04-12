@@ -11,7 +11,6 @@ RSpec.feature "user can edit information for destination " do
     fill_in "Name", with: "Hawaii"
     fill_in "Url path", with: "https://static-s.aa-cdn.net/img/ios/371279677/1fbf8e2fbaf52b6caa1d1de481f8eeb9?v=1"
     click_on "Update Destination"
-save_and_open_page
     expect(page).to_not have_content original_destination
     expect(page).to have_content "Hawaii"
   end
