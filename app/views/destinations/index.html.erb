@@ -1,5 +1,7 @@
 <h1>All Destinations, Sail Away!</h1>
 <%= link_to "New Destination", new_destination_path %>
+<ul>
 <% @destinations.map do |destination| %>
-<%= destination.name %>
+<li><%= destination.name %></li>
 <% end %>
+<ul>
